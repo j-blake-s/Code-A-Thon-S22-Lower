@@ -1,6 +1,1 @@
-## Problem Writers
-------------------
-
-
-
-Blake Seekings -> N_Queens
+# Spring 2022 Code-A-Thon Lower Division Challenge Repo
