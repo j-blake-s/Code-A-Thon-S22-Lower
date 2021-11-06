@@ -1,5 +1,5 @@
 |            Challenge            |            Author            |  Points  |
-|           :---------:           |           :------:           | :------: |
+|           :---------            |           :------:           | :------: |
 | Problem 1                       | Writer 1                     | 50 |
 | Problem 2                       | Writer 2                     | 50 |
 | Problem 3                       | Writer 3                     | 50 |
