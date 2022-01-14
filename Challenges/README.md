@@ -1,6 +1,6 @@
 |            Challenge            |            Author            |  Points  |
 |           :---------            |           :------:           | :------: |
-| Problem 1                       | Writer 1                     | 50 |
+| Icy Impact                      | Blake Seekings               | 50 |
 | Problem 2                       | Writer 2                     | 50 |
 | Problem 3                       | Writer 3                     | 50 |
 | Problem 4                       | Writer 4                     | 50 |
