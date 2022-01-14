@@ -1,6 +1,5 @@
 # Problem Statement
-    Some kind of variation on the N-Queens problem involving ice skating. 
-    Perhaps there are obstacles on the board? Perhaps different "pieces" move different ways/amounts?
+    Involves an Ice Rink and skating and navigating the board.
 
 # Input Format
     The first line contains N, the size of the board.
