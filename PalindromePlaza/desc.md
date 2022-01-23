@@ -19,3 +19,8 @@ in order:
 (aba),(dcd),(aba),
 (ada),(bcb),(ada),
 (a),(aca),(a)
+
+Data is written row by row, ie the above example would be
+aba
+dcd
+aba
