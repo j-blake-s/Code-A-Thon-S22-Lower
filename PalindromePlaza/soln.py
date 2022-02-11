@@ -61,7 +61,7 @@ def test_mat(mat):
 		col = "".join([sub[i] for sub in mat])
 		pal_count += test_palindrome(col)
 	
-	# test diagonals (only one direction)
+	# first go top left to bottom right
 	for i in range(0,cols):
 		curr_row = 0
 		curr_col = i
@@ -71,7 +71,7 @@ def test_mat(mat):
 			curr_row +=1
 			curr_col -=1
 		pal_count += test_palindrome(curr_str)
-	# go the other way
+	# # go the other way
 	for i in range(0,cols-1):
 		curr_row = cols - 1
 		curr_col = cols - i -1
@@ -80,8 +80,31 @@ def test_mat(mat):
 			curr_str += mat[curr_row][curr_col]
 			curr_row -=1
 			curr_col +=1
-
 		pal_count += test_palindrome(curr_str)
+	
+	# now go top right to bottom left
+	# first half
+	for i in range(0,cols):
+		curr_row = 0
+		curr_col = cols-i-1
+		curr_str = ""
+		for j in range(i+1):
+			curr_str += mat[curr_row][curr_col]
+			curr_row +=1
+			curr_col +=1
+		pal_count += test_palindrome(curr_str)
+	# next half
+	for i in range(0,cols-1):
+		curr_row = cols - 1
+		curr_col = i
+		curr_str = ""
+		for j in range(i+1):
+			curr_str += mat[curr_row][curr_col]
+			curr_row -=1
+			curr_col -=1
+		pal_count += test_palindrome(curr_str)
+	
+
 	
 	return pal_count
 
@@ -99,7 +122,13 @@ mat1 = [
 	'dcd',
 	'aba'
 ]
-print(test_mat(mat1))
+mat2 = [
+	'abba',
+	'bacd',
+	'badc',
+	'abdd'
+]
+print(test_mat(mat2))
 
 
 
