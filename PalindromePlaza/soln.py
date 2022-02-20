@@ -119,16 +119,19 @@ import string
 import random
 
 def gen_cases(case_count,base_dir):
+	letters = ['a','b']
 	# base dir == samples
 	# always square matrix
-		for i in range(case_count):
-			# get random word size each time
-			word_size = random.randint(3,50)
-			file_name = base_dir + "/inputs/input{}{}.txt".format(i//10,i%10)
-			with open(file_name,"w") as f:
-				for j in range(word_size):
-					curr_word = ''.join(random.choices(string.ascii_lowercase,k=word_size))
-					print(curr_word,file=f)
+	for i in range(case_count):
+		# get random word size each time
+		word_size = random.randint(3,50)
+		file_name = base_dir + "/inputs/input{}{}.txt".format(i//10,i%10)
+		with open(file_name,"w") as f:
+			for j in range(word_size):
+				samp = [letters[random.randint(0,1)] for i in range(0,word_size)]
+				# print(samp)
+				curr_word = ''.join(samp)
+				print(curr_word,file=f)
 
 import os
 import re
@@ -146,8 +149,8 @@ def gen_solns(base_dir):
 			print(soln,file=f)
 
 ## gen cases and then solns
-# gen_cases(100,"./samples")
-# gen_solns("./samples")
+gen_cases(100,"./samples")
+gen_solns("./samples")
 
 
 
