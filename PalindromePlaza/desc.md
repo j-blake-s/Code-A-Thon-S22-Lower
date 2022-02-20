@@ -3,6 +3,9 @@ Given a square character matrix, count how many columns, rows, and diagonals can
 Note that we are not counting the number of palindromes, just if they can be made into one.
 
 Note: we consider a single character as a palindrome.
+Note: All matrices are square.
+
+Constraints: 3 < N < 50, where N is the size of a word.
 
 
 Example 1:

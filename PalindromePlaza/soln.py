@@ -1,7 +1,5 @@
 # solution
 
-data = None
-
 def test_palindrome(in_str):
 	"""
 	Tests if a str can be made into a palindrome
@@ -104,36 +102,73 @@ def test_mat(mat):
 			curr_col -=1
 		pal_count += test_palindrome(curr_str)
 	
-
-	
 	return pal_count
+
+def solve_from_file(file_name):
+	# read file, solve problem
+	with open(file_name,"r") as f:
+		lines = f.readlines()
+		mat = []
+		for line in lines:
+			# be sure to remove new lines!
+			mat.append(line.replace("\n",""))
+		return test_mat(mat)
+
+# gen cases
+import string
+import random
+
+def gen_cases(case_count,base_dir):
+	# base dir == samples
+	# always square matrix
+		for i in range(case_count):
+			# get random word size each time
+			word_size = random.randint(3,50)
+			file_name = base_dir + "/inputs/input{}{}.txt".format(i//10,i%10)
+			with open(file_name,"w") as f:
+				for j in range(word_size):
+					curr_word = ''.join(random.choices(string.ascii_lowercase,k=word_size))
+					print(curr_word,file=f)
+
+import os
+import re
+def gen_solns(base_dir):
+	# base dir == samples
+	# read the files
+	for f in os.listdir(base_dir + "/inputs"):
+		file_name = os.path.join(base_dir+"/inputs",f)
+		# read file
+		soln = solve_from_file(file_name)
+		# write to file
+		number_of_file = re.findall(r'\d+',file_name)[0]
+		output_name = base_dir + "/outputs/output{}.txt".format(number_of_file)
+		with open(output_name,"w") as f:
+			print(soln,file=f)
+
+## gen cases and then solns
+# gen_cases(100,"./samples")
+# gen_solns("./samples")
+
+
 
 
 		
 
-mat0 = [
-	'abcd',
-	'efgh',
-	'ijkl',
-	'mnop',
-]
-mat1 = [
-	'aba',
-	'dcd',
-	'aba'
-]
-mat2 = [
-	'abba',
-	'bacd',
-	'badc',
-	'abdd'
-]
-print(test_mat(mat2))
-
-
-
-
-
-# with open("in.txt") as f:
-# 	for line in f:
-# 		print(line)
+# mat0 = [
+# 	'abcd',
+# 	'efgh',
+# 	'ijkl',
+# 	'mnop',
+# ]
+# mat1 = [
+# 	'aba',
+# 	'dcd',
+# 	'aba'
+# ]
+# mat2 = [
+# 	'abba',
+# 	'bacd',
+# 	'badc',
+# 	'abdd'
+# ]
+# print(test_mat(mat2))
