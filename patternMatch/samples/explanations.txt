@@ -1,0 +1,5 @@
+^[a-h]+([a-h])\1{4}[2468][02468]*([13579]+[xyz]|[rat]+)$
+5 or more letters a through h, where the last 5 must all be the same
+following is an even digit (except 0), followed any number of digits. If an odd digit is seen, all digits following it must also be odd
+if an odd digit has been seen up until now only 1 character should remain, and it should be either x, y, or z
+if no odd digits have been seen, all remaining letters should be either r, a, or t
