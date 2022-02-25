@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
   cout << "Number of CLOSED DOORS: " << closed << endl;
   cout << "Closed doors: ";
   for (size_t i = 0; i < doors.size(); ++i) {
-    if (doors[i] == 1)
+    if (doors[i] == 0)
       cout << (i + 1) << " ";
   }
   cout << endl;
