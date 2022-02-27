@@ -7,3 +7,6 @@
 | Palindrome Plaza                       | Lex W                    | 100 |
 | Rosas Code                       | Ross V                    | 100 |
 | Splitzies                       | Vince KL                    | 100 |
+
+
+Note: Folders for "Hungry Alligators" and "Great Great Great... Grandchildren" are in the upper division repository: https://github.com/j-blake-s/Code-A-Thon-S22-Upper/tree/main/Challenges
