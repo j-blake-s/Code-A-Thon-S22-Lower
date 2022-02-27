@@ -1,0 +1,16 @@
+15
+ababaaaabbabbab
+bababaaaabbbbab
+bbbbabbababbaaa
+abbaaaabaabaaab
+bbaaaaabbbbbbaa
+abaabbababaabbb
+bbbbbbbbabbbbaa
+aaaabaaaabbbbbb
+bbaababaaabaaab
+aaaabaaaaababba
+aabaababbbbbbab
+abbaabbbabaaaba
+babaaaaabbaaaba
+aaaababbbabbbaa
+aaababbbbbabbaa
