@@ -1,5 +1,0 @@
-4
-abba
-bacd
-badc
-abdd

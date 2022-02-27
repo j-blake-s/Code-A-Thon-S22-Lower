@@ -1,9 +1,0 @@
-8
-bbaababb
-aaaababb
-abaaabaa
-abbbbaaa
-baabbaab
-aababaab
-abaaaaab
-abababaa
